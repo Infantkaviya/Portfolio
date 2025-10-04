@@ -12,7 +12,7 @@ Hi, I’m **Infant Kaviya** from Tamil Nadu, India. I am passionate about develo
 - Experienced in Java Full Stack projects: Spring Boot, React, MySQL, MongoDB  
 - Skilled in front-end: HTML, CSS, JavaScript  
 
-[📄 View My Resume](https://www.canva.com/design/YOUR_RESUME_LINK)  
+[📄 View My Resume](https://docs.google.com/document/d/1-bA-A-kvsQwXaQuYcXquv62JGTh4PVJt6PnzAecBP60/edit?tab=t.0)  
 
 ---
 
@@ -79,7 +79,7 @@ Hi, I’m **Infant Kaviya** from Tamil Nadu, India. I am passionate about develo
 ## ⚡ Tips
 
 - Click the **Live** links to see my websites in action  
-- Resume link is hosted on **Canva** and always up-to-date  
+- Resume link is hosted  
 
 ---
 
