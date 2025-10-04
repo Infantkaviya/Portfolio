@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Infant Kaviya | Portfolio</title>
+
+  <!-- TailwindCSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <!-- Devicons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+
+  <!-- Tailwind Theme Extension -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'black-bg': '#0A0A0A',
+            'pink-main': '#EC4899',
+            'purple-main': '#8B5CF6',
+            'purple-light': '#A78BFA',
+            'gray-text': '#E5E7EB'
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    html { scroll-behavior: smooth; }
+
+    /* Gradient Text */
+    .gradient-text {
+      background: linear-gradient(90deg, #8B5CF6, #EC4899);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    /* Button Glow */
+    .hover-glow:hover {
+      box-shadow: 0 0 10px #EC4899, 0 0 25px #8B5CF6;
+      transition: all 0.3s ease;
+    }
+
+    /* Card Hover Lift */
+    .hover-lift:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 8px 20px rgba(236, 72, 153, 0.3);
+      transition: all 0.3s ease;
+    }
+
+    /* Icon Glow */
+    .icon-hover:hover {
+      color: #EC4899;
+      text-shadow: 0 0 10px #EC4899;
+      transition: all 0.3s ease;
+    }
+
+    /* Navbar backdrop */
+    header {
+      background: rgba(20, 20, 20, 0.9);
+      backdrop-filter: blur(10px);
+    }
+  </style>
+</head>
+
+<body class="bg-black-bg text-gray-text">
+
+  <!-- Navbar -->
+  <header class="sticky top-0 z-50 shadow-md">
+    <nav class="container mx-auto flex justify-between items-center p-4">
+      <h1 class="text-xl font-bold gradient-text">Infant Kaviya</h1>
+      <ul id="nav-links" class="hidden md:flex gap-6 font-medium">
+        <li><a href="#about" class="hover:text-pink-main transition">About</a></li>
+        <li><a href="#skills" class="hover:text-pink-main transition">Skills</a></li>
+        <li><a href="#projects" class="hover:text-pink-main transition">Projects</a></li>
+        <li><a href="#experience" class="hover:text-pink-main transition">Experience</a></li>
+        <li><a href="#contact" class="hover:text-pink-main transition">Contact</a></li>
+      </ul>
+      <div class="md:hidden text-pink-main text-2xl cursor-pointer" id="hamburger">
+        <i class="fas fa-bars"></i>
+      </div>
+    </nav>
+    <ul id="mobile-menu" class="hidden flex-col bg-black-bg text-pink-main text-lg font-medium space-y-4 p-4 md:hidden">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="relative text-center py-24 text-white bg-cover bg-center" style="background-image: url('assets/images/bg-3.jpg');">
+    <div class="absolute inset-0 bg-black bg-opacity-70"></div>
+    <div class="relative z-10">
+      <h2 class="text-5xl font-bold mb-4 gradient-text">Certified Java Full Stack Developer</h2>
+      <p class="text-lg max-w-2xl mx-auto text-gray-300">
+        Skilled in Java, Spring Boot, REST APIs, MySQL, MongoDB, and WordPress. I build scalable, secure, and responsive applications & websites.
+      </p>
+      <div class="mt-6">
+        <a href="https://docs.google.com/document/d/..." 
+           target="_blank" 
+           class="bg-gradient-to-r from-purple-main to-pink-main text-black font-medium px-6 py-3 rounded-lg shadow-md hover-glow">
+          View Resume
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="container mx-auto py-20 px-4">
+    <h3 class="text-3xl font-bold text-center mb-8 gradient-text">About Me</h3>
+    <p class="text-center max-w-3xl mx-auto text-gray-300">
+      Hi, I’m <b class="text-pink-main">Infant Kaviya</b> from Tamil Nadu, India. A passionate developer experienced in Java Full Stack Development and WordPress. 
+      I’ve built <b class="text-purple-main">15+ WordPress websites</b> and worked on full-stack projects like <b class="text-pink-main">JobConnect</b>, 
+      <b class="text-purple-main">Hotel Booking System</b>, and <b class="text-pink-main">Online Quiz App</b>.
+    </p>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="bg-black bg-opacity-60 py-20 px-4">
+    <h3 class="text-3xl font-bold text-center mb-12 gradient-text">Technical Skills</h3>
+    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-8 text-center">
+
+      <div class="p-6 bg-black/50 rounded-lg shadow-lg hover-lift">
+        <i class="devicon-java-plain text-5xl text-pink-main"></i>
+        <p class="mt-2 font-semibold">Java</p>
+      </div>
+
+      <div class="p-6 bg-black/50 rounded-lg shadow-lg hover-lift">
+        <i class="devicon-spring-plain text-5xl text-purple-main"></i>
+        <p class="mt-2 font-semibold">Spring Boot</p>
+      </div>
+
+      <div class="p-6 bg-black/50 rounded-lg shadow-lg hover-lift">
+        <i class="devicon-react-original text-5xl text-pink-main"></i>
+        <p class="mt-2 font-semibold">React</p>
+      </div>
+
+      <div class="p-6 bg-black/50 rounded-lg shadow-lg hover-lift">
+        <i class="devicon-javascript-plain text-5xl text-purple-main"></i>
+        <p class="mt-2 font-semibold">JavaScript</p>
+      </div>
+
+      <div class="p-6 bg-black/50 rounded-lg shadow-lg hover-lift">
+        <i class="devicon-mysql-plain text-5xl text-pink-main"></i>
+        <p class="mt-2 font-semibold">MySQL</p>
+      </div>
+
+      <div class="p-6 bg-black/50 rounded-lg shadow-lg hover-lift">
+        <i class="devicon-mongodb-plain text-5xl text-purple-main"></i>
+        <p class="mt-2 font-semibold">MongoDB</p>
+      </div>
+
+      <div class="p-6 bg-black/50 rounded-lg shadow-lg hover-lift">
+        <i class="devicon-html5-plain text-5xl text-pink-main"></i>
+        <p class="mt-2 font-semibold">HTML</p>
+      </div>
+
+      <div class="p-6 bg-black/50 rounded-lg shadow-lg hover-lift">
+        <i class="devicon-css3-plain text-5xl text-purple-main"></i>
+        <p class="mt-2 font-semibold">CSS</p>
+      </div>
+
+      <div class="p-6 bg-black/50 rounded-lg shadow-lg hover-lift">
+        <i class="devicon-wordpress-plain text-5xl text-pink-main"></i>
+        <p class="mt-2 font-semibold">WordPress</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+<section id="projects" class="container mx-auto py-20 px-4">
+  <h3 class="text-3xl font-bold text-center mb-12 gradient-text">Projects</h3>
+
+  <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+    <!-- Java Projects -->
+    <div class="bg-black/60 shadow-lg rounded-lg overflow-hidden hover-lift">
+      <img src="assets/images/jobconnect.jpg" alt="Online Quiz" class="w-full h-48 object-cover">
+      <div class="p-6">
+        <h4 class="text-xl font-semibold text-pink-main mb-2">JobConnect – Job Portal</h4>
+        <p class="text-gray-300 text-sm">
+          Spring Boot, Thymeleaf, MySQL – User registration, job posting & application modules.
+        </p>
+      </div>
+    </div>
+
+    <div class="bg-black/60 shadow-lg rounded-lg overflow-hidden hover-lift">
+      <img src="assets/images/hotelbooking.jpg" alt="Online Quiz" class="w-full h-48 object-cover">
+      <div class="p-6">
+        <h4 class="text-xl font-semibold text-pink-main mb-2">Hotel Booking System</h4>
+        <p class="text-gray-300 text-sm">
+          Spring Boot, React, MySQL – Authentication, room management, booking features.
+        </p>
+      </div>
+    </div>
+
+    <div class="bg-black/60 shadow-lg rounded-lg overflow-hidden hover-lift">
+      <img src="assets/images/onlinequiz.jpg" alt="Online Quiz" class="w-full h-48 object-cover">
+      <div class="p-6">
+        <h4 class="text-xl font-semibold text-pink-main mb-2">Online Quiz App</h4>
+        <p class="text-gray-300 text-sm">
+          Spring Boot, React – Quiz creation, scoring & leaderboard system.
+        </p>
+      </div>
+    </div>
+
+    <!-- WordPress Projects -->
+    <div class="bg-black/60 rounded-lg overflow-hidden hover-lift">
+      <a href="https://cognitionhut.com/" target="_blank">
+        <img src="assets/images/cognitionhut.png" alt="Cognition Hut" class="w-full h-48 object-cover">
+      </a>
+      <div class="p-5">
+        <h4 class="font-semibold text-lg text-pink-main">Cognition Hut</h4>
+        <p class="text-gray-300 text-sm">
+          Education & training website. 
+          <a href="https://cognitionhut.com/" target="_blank" class="text-purple-main hover:text-pink-main">Live</a>
+        </p>
+      </div>
+    </div>
+
+    <div class="bg-black/60 rounded-lg overflow-hidden hover-lift">
+      <a href="https://jaiganeshcateringservices.com/" target="_blank">
+        <img src="assets/images/jai-ganeshcatering.png" alt="Jai Ganesh Catering" class="w-full h-48 object-cover">
+      </a>
+      <div class="p-5">
+        <h4 class="font-semibold text-lg text-pink-main">Jai Ganesh Catering</h4>
+        <p class="text-gray-300 text-sm">
+          Catering services website. 
+          <a href="https://jaiganeshcateringservices.com/" target="_blank" class="text-purple-main hover:text-pink-main">Live</a>
+        </p>
+      </div>
+    </div>
+
+    <div class="bg-black/60 rounded-lg overflow-hidden hover-lift">
+      <a href="https://anandhamcatering.in/" target="_blank">
+        <img src="assets/images/anadhamcatering.png" alt="Anandham Catering" class="w-full h-48 object-cover">
+      </a>
+      <div class="p-5">
+        <h4 class="font-semibold text-lg text-pink-main">Anandham Catering</h4>
+        <p class="text-gray-300 text-sm">
+          WordPress catering website. 
+          <a href="https://anandhamcatering.in/" target="_blank" class="text-purple-main hover:text-pink-main">Live</a>
+        </p>
+      </div>
+    </div>
+
+    <div class="bg-black/60 rounded-lg overflow-hidden hover-lift">
+      <a href="https://srisarathaphysiotherapyclinic.com/" target="_blank">
+        <img src="assets/images/sri-physio.png" alt="Sri Saratha Physiotherapy Clinic" class="w-full h-48 object-cover">
+      </a>
+      <div class="p-5">
+        <h4 class="font-semibold text-lg text-pink-main">Sri Saratha Physiotherapy Clinic</h4>
+        <p class="text-gray-300 text-sm">
+          Healthcare site with appointment features. 
+          <a href="https://srisarathaphysiotherapyclinic.com/" target="_blank" class="text-purple-main hover:text-pink-main">Live</a>
+        </p>
+      </div>
+    </div>
+
+    <div class="bg-black/60 rounded-lg overflow-hidden hover-lift">
+      <a href="https://spocscientifics.com/" target="_blank">
+        <img src="assets/images/spoc.png" alt="SPOC Scientifics" class="w-full h-48 object-cover">
+      </a>
+      <div class="p-5">
+        <h4 class="font-semibold text-lg text-pink-main">SPOC Scientifics</h4>
+        <p class="text-gray-300 text-sm">
+          Company website with product listings. 
+          <a href="https://spocscientifics.com/" target="_blank" class="text-purple-main hover:text-pink-main">Live</a>
+        </p>
+      </div>
+    </div>
+
+    <div class="bg-black/60 rounded-lg overflow-hidden hover-lift">
+      <a href="https://avsbeautyacademy.in/" target="_blank">
+        <img src="assets/images/avs-beauty.png" alt="AVS Beauty Academy" class="w-full h-48 object-cover">
+      </a>
+      <div class="p-5">
+        <h4 class="font-semibold text-lg text-pink-main">AVS Beauty Academy</h4>
+        <p class="text-gray-300 text-sm">
+          Beauty training academy website. 
+          <a href="https://avsbeautyacademy.in/" target="_blank" class="text-purple-main hover:text-pink-main">Live</a>
+        </p>
+      </div>
+    </div>
+
+    <div class="bg-black/60 rounded-lg overflow-hidden hover-lift">
+      <a href="https://nishaengineeringworks.com/" target="_blank">
+        <img src="assets/images/nisha-engineering.png" alt="Nisha Engineering Works" class="w-full h-48 object-cover">
+      </a>
+      <div class="p-5">
+        <h4 class="font-semibold text-lg text-pink-main">Nisha Engineering Works</h4>
+        <p class="text-gray-300 text-sm">
+          Industrial company website. 
+          <a href="https://nishaengineeringworks.com/" target="_blank" class="text-purple-main hover:text-pink-main">Live</a>
+        </p>
+      </div>
+    </div>
+
+    <div class="bg-black/60 rounded-lg overflow-hidden hover-lift">
+      <a href="https://nsrscaffoldingmadurai.netlify.app/" target="_blank">
+        <img src="assets/images/nsr-scaffolding.png" alt="NSR Scaffolding" class="w-full h-48 object-cover">
+      </a>
+      <div class="p-5">
+        <h4 class="font-semibold text-lg text-pink-main">NSR Scaffolding</h4>
+        <p class="text-gray-300 text-sm">
+          Static site hosted on Netlify. 
+          <a href="https://nsrscaffoldingmadurai.netlify.app/" target="_blank" class="text-purple-main hover:text-pink-main">Live</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- Work Experience -->
+  <section id="experience" class="bg-black bg-opacity-70 py-20 px-4">
+    <h3 class="text-3xl font-bold text-center mb-12 gradient-text">Work Experience</h3>
+    <div class="max-w-3xl mx-auto space-y-6">
+      <div class="bg-black/60 shadow-lg rounded-lg p-6 hover-lift">
+        <h4 class="font-semibold text-lg text-pink-main">Associate Clinical Documentation</h4>
+        <p class="text-gray-300 text-sm">Inventurus Knowledge Solutions | Apr 2024 – Aug 2025</p>
+        <ul class="mt-2 text-gray-300 list-disc list-inside">
+          <li>Managed electronic health records with full data privacy compliance.</li>
+          <li>Ensured secure storage and retrieval of sensitive information.</li>
+        </ul>
+      </div>
+
+      <div class="bg-black/60 shadow-lg rounded-lg p-6 hover-lift">
+        <h4 class="font-semibold text-lg text-pink-main">WordPress Developer</h4>
+        <p class="text-gray-300 text-sm">Honey Iconics | Jan 2023 – Feb 2024</p>
+        <ul class="mt-2 text-gray-300 list-disc list-inside">
+          <li>Built and optimized 15+ responsive WordPress websites for clients.</li>
+          <li>Enhanced SEO and performance for projects like SPOC Scientifics & Anandham Catering.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="container mx-auto py-20 px-4 text-center">
+    <h3 class="text-3xl font-bold mb-8 gradient-text">Contact Me</h3>
+    <p class="mb-6 text-gray-300">📱 +91 7530073270 | ✉️ infantkaviya@gmail.com</p>
+    <div class="flex justify-center gap-6 text-3xl">
+      <a href="https://github.com/Infantkaviya" target="_blank" class="icon-hover"><i class="fab fa-github"></i></a>
+      <a href="mailto:infantkaviya@gmail.com" class="icon-hover"><i class="fas fa-envelope"></i></a>
+      <a href="https://www.linkedin.com/in/infant-kaviya-986310233/" target="_blank" class="icon-hover"><i class="fab fa-linkedin"></i></a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-6 text-center text-gray-400 border-t border-pink-main">
+    © 2025 Infant Kaviya. All Rights Reserved.
+  </footer>
+
+  <!-- Hamburger -->
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobile-menu');
+    hamburger.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+
+</body>
+</html>
